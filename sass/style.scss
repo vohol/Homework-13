@@ -25,8 +25,9 @@ $color-gray: #4B5D68;
 .request-demo {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     cursor: pointer;
-    max-width: 210px;
+    min-width: 210px;
     padding: 17px 29px;
     background-color: $color-white;
     box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
@@ -42,17 +43,16 @@ $color-gray: #4B5D68;
     transition-property: all;
     transition-duration: 0.3s;
     &:hover {
-        color: $color-main-pink;
-        transform: scale(1.1);
+        color: $color-main-purple;
     }
     &__arrow {
-        margin-left: 20px;
         width: 20px;
         height: 14px;
     }
 }
 
 .learn-more {
+    min-width: 170px;
     padding: 16px 37px 15px;
     background: $color-main-purple;
     border-radius: 50px;
@@ -68,19 +68,17 @@ $color-gray: #4B5D68;
     cursor: pointer;
     &:hover {
         background: $color-main-pink;
-        transform: scale(1.1);
     }
 }
 
 .container {
     padding: 0 15px;
     margin: 0 auto;
-    // видс добавить тут, а не на десктопе
+    max-width: 1120px;
 }
 
 .header {
     padding-top: 15px;
-    
     .container {
         position: relative;
         margin-bottom: 30px;
@@ -114,8 +112,8 @@ $color-gray: #4B5D68;
         .header__menu-button {
             .icon {
                 position: absolute;
-                top: -5px;
-                right: -5px;
+                top: 0;
+                right: 15px;
                 cursor: pointer;
                 fill: $color-main-purple;
             }
@@ -146,13 +144,17 @@ $color-gray: #4B5D68;
                     font-weight: 500;
                     font-size: 16px;
                     line-height: 160%;
-                    color: $color-black;
+                    color: $color-gray;
                     transition-property: all;
                     transition-duration: 0.3s;
                     &:hover {
                         color: $color-main-pink;
-                        transform: scale(1.1);
                     }
+                }
+                .current {
+                    font-weight: 800;
+                    color: $color-black;
+
                 }
             }
             .request-demo {
@@ -160,13 +162,12 @@ $color-gray: #4B5D68;
             }
         }
     }
-
     &__menu--active {
         .header__menu-button {
             .icon {
                 position: absolute;
                 top: -5px;
-                right: -5px;
+                right: 15px;
                 cursor: pointer;
                 width: 49px;
                 height: 49px;
@@ -186,21 +187,16 @@ $color-gray: #4B5D68;
 
         }
     }
+
 }
 
 .hero {
     .container{
-
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
         margin-bottom: 30px;
-        // background-image: url(../img/image-hero.png);
-        // background-repeat: no-repeat;
-        // background-position: center;
-        // background-position-y: bottom;
-        // background-position-x: right;
     }
     &__photo {
         max-width: 100%;
@@ -313,23 +309,7 @@ $color-gray: #4B5D68;
         flex-direction: column;
         align-items: center;
         margin-bottom: 30px;
-        // background-repeat: no-repeat;
-        // background-size: contain;
-        // background-position-y: bottom;
-        // background-position-x: right;
     }
-    // &__card:nth-child(1) {
-    //     background-image: url(../img/background-1.png);
-    // }
-    // &__card:nth-child(2) {
-    //     background-image: url(../img/background-2.png);
-    // }
-    // &__card:nth-child(3) {
-    //     background-image: url(../img/background-3.png);
-    // }
-    // &__card:nth-child(4) {
-    //     background-image: url(../img/background-4.png);
-    // }
     &__image {
         margin-bottom: 15px;
     }
@@ -370,9 +350,6 @@ $color-gray: #4B5D68;
         &:hover {
             color: $color-main-pink;
             text-decoration-color: $color-main-pink;
-        }
-        &:hover .flex-zone__card {
-            transform: scale(1.1);
         }
     }
 }
@@ -443,12 +420,6 @@ $color-gray: #4B5D68;
 
 .footer {
     border-top: solid 2px rgba(156, 105, 226, 0.2);
-
-    .request-demo {
-        &__arrow {
-            display: none;
-        }
-    }
     .container {
         margin-top: 30px;
         display: flex;
@@ -479,10 +450,12 @@ $color-gray: #4B5D68;
     }
     &__buttons {
         display: flex;
+        flex-direction: column;
         align-items: center;
         margin-bottom: 30px;
         button:first-child {
-            margin-right: 20px;
+            margin-bottom: 30px;
+            min-width: 210px;
         }
     }
     &__co-info {
@@ -518,10 +491,6 @@ $color-gray: #4B5D68;
             }
             &:hover p {
                 color: $color-main-pink;
-                transform: scale(1.1);
-            }
-            &:hover svg {
-                transform: scale(1.1);
             }
             &:hover svg .purple {
                 fill: $color-main-pink;
@@ -621,7 +590,7 @@ $color-gray: #4B5D68;
 
 @media screen and (min-width: 1278px) {
     .container {
-        max-width: 1120px;
+        padding: 0;
     }
 
     .header {
@@ -645,6 +614,8 @@ $color-gray: #4B5D68;
                 }
             }
             .header__navigation {
+                display: flex;
+                align-items: center;
                 flex-direction: row;
                 justify-content: space-between;
                 ul {
@@ -714,7 +685,6 @@ $color-gray: #4B5D68;
             display: block;
             padding: 0;
             max-width: 475px;
-            
         }
         &__title {
             text-align: start;
@@ -851,7 +821,6 @@ $color-gray: #4B5D68;
                 &:first-child {
                     margin-bottom: 69px;
                 }
-
             }
         }
         &__title-container {
@@ -867,11 +836,13 @@ $color-gray: #4B5D68;
         }
         &__buttons {
             display: flex;
-            
+            flex-direction: row;
             align-items: flex-start;
             margin-top: 121px;
             margin-bottom: 0;
             button:first-child {
+                margin-bottom: 0;
+                min-width: 170px;
                 margin-right: 30px;
             }
         }
