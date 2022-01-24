@@ -32,7 +32,6 @@
   font-style: normal;
   font-weight: 800;
   font-size: 16px;
-  line-height: 160%;
   letter-spacing: 0.005em;
   color: #212353;
   transition-property: all;
@@ -40,6 +39,7 @@
 }
 .request-demo:hover {
   color: #9C69E2;
+  background-color: rgba(240, 99, 184, 0.05);
 }
 .request-demo__arrow {
   width: 20px;
@@ -56,14 +56,13 @@
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
-  line-height: 160%;
   color: #FFFFFF;
   transition-property: all;
   transition-duration: 0.3s;
   cursor: pointer;
 }
 .learn-more:hover {
-  background: #F063B8;
+  opacity: 0.8;
 }
 
 .container {
@@ -136,7 +135,6 @@
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 160%;
   color: #4B5D68;
   transition-property: all;
   transition-duration: 0.3s;
@@ -205,6 +203,9 @@
   margin-bottom: 50px;
 }
 
+.description {
+  padding: 0 15px;
+}
 .description .container {
   margin-bottom: 30px;
   padding-top: 30px;
@@ -258,7 +259,6 @@
   font-style: normal;
   font-weight: bold;
   font-size: 30px;
-  line-height: 130%;
   text-align: center;
   color: #212353;
   margin-bottom: 15px;
@@ -298,8 +298,7 @@
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
-  line-height: 130%;
-  color: .flex-zone__info-title #212353;
+  color: #212353;
   margin-bottom: 10px;
 }
 .flex-zone__info-description {
@@ -317,7 +316,6 @@
   font-style: normal;
   font-weight: 800;
   font-size: 16px;
-  line-height: 160%;
   letter-spacing: 0.005em;
   color: #212353;
   text-decoration-color: #FFFFFF;
@@ -330,6 +328,9 @@
   text-decoration-color: #F063B8;
 }
 
+.testimonials {
+  padding: 0 15px;
+}
 .testimonials .container {
   margin-bottom: 30px;
   padding: 30px;
@@ -344,7 +345,6 @@
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
-  line-height: 130%;
   color: #FFFFFF;
   margin-bottom: 30px;
 }
@@ -365,7 +365,6 @@
   font-style: normal;
   font-weight: 900;
   font-size: 18px;
-  line-height: 160%;
   letter-spacing: 0.005em;
   color: #212353;
   margin-bottom: 5px;
@@ -375,7 +374,6 @@
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 160%;
   letter-spacing: 0.01em;
   color: #9C69E2;
   margin-bottom: 5px;
@@ -408,7 +406,6 @@
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
-  line-height: 130%;
   color: #212353;
   margin-bottom: 15px;
 }
@@ -417,7 +414,6 @@
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
-  line-height: 160%;
   color: #4B5D68;
   margin-bottom: 15px;
 }
@@ -461,7 +457,6 @@
   font-style: normal;
   font-weight: 900;
   font-size: 15px;
-  line-height: 160%;
   color: #212353;
 }
 .footer__co-info .footer__logo:hover p {
@@ -515,8 +510,8 @@
   font-style: normal;
   font-weight: 900;
   font-size: 16px;
-  line-height: 160%;
   color: #212353;
+  margin-bottom: 10px;
 }
 .footer__about-help a {
   text-decoration: none;
@@ -623,6 +618,9 @@
     margin-bottom: 50px;
   }
 
+  .description {
+    padding: 0;
+  }
   .description .container {
     max-width: 1117px;
     margin-bottom: 150px;
@@ -730,6 +728,9 @@
     margin-bottom: 0;
   }
 
+  .testimonials {
+    padding: 0;
+  }
   .testimonials .container {
     margin-bottom: 150px;
     padding: 0;
